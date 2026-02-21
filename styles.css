@@ -80,7 +80,8 @@ body::before {
   display: none;
 }
 
-.slider a {
+.slider a,
+.slider div {
   display: block;
   height: 80vh;
   width: auto;
@@ -88,7 +89,8 @@ body::before {
   box-shadow: 2px 0 30px rgba(0, 0, 0, 0.6);
 }
 
-.slider a img {
+.slider a img,
+.slider div img {
   height: 100%;
   max-width: 100%;
   width: auto;
@@ -135,14 +137,16 @@ body::before {
     box-shadow: none;
   }
 
-  .slider a {
+  .slider a,
+  .slider div {
     width: 100%;
     height: auto;
     max-width: 600px;
     margin: 0 auto;
   }
 
-  .slider a img {
+  .slider a img,
+  .slider div img {
     width: 100%;
     height: auto;
   }
