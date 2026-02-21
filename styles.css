@@ -148,7 +148,7 @@ body::before {
     width: 100%;
     height: auto;
     max-width: 600px;
-    margin: 0 auto;
+    margin: 0 auto !important;
   }
 
   .slider a img,
