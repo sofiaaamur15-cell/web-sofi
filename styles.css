@@ -75,10 +75,6 @@ body::before {
   box-shadow: 2px 0 30px rgba(0, 0, 0, 0.3);
 }
 
-.slider:active {
-  cursor: grabbing; /* Cambia el cursor cuando se está arrastrando */
-}
-
 /* Ocultar barra de scroll */
 .slider::-webkit-scrollbar {
   display: none;
@@ -105,8 +101,8 @@ body::before {
   width: auto;
 }
 
-.card {
-  width: 350px !important;
+.slider .card {
+  width: 350px;
   font-family: Helvetica, sans-serif;
   padding: 30px;
   background-color: rgba(255, 255, 255, 0.8);
@@ -160,7 +156,7 @@ body::before {
     width: 100%;
     height: auto;
     max-width: 600px;
-    margin: 0 auto !important;
+    margin: 0 auto;
   }
 
   .slider a img,
@@ -168,6 +164,12 @@ body::before {
   .slider div video {
     width: 100%;
     height: auto;
+  }
+
+  .slider .card {
+    width: auto;
+    min-height: 400px;
+    padding: 15px;
   }
 }
 
@@ -185,5 +187,8 @@ body::before {
   .slider {
     padding: 20px;
     gap: 20px;
+  }
+  .slider .card {
+    padding: 10px;
   }
 }
