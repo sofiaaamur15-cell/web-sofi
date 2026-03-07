@@ -10,6 +10,7 @@ body {
   overflow: hidden;
   display: flex;
 }
+
 body::before {
   content: "";
   position: fixed;
@@ -96,6 +97,7 @@ body::before {
 .slider a img,
 .slider div img,
 .slider div video {
+  display: block;
   height: 100%;
   max-width: 100%;
   width: auto;
@@ -115,7 +117,7 @@ body::before {
 @media (max-width: 768px) {
   body {
     flex-direction: column;
-    overflow-y: auto;
+    /* overflow-y: auto; */
   }
 
   .menu {
@@ -143,10 +145,11 @@ body::before {
 
   .slider {
     flex-direction: column;
-    height: auto;
+    height: calc(100vh - 90px);/* -alturamenu y altura padding */
     gap: 30px;
     margin-top: 60px;
     padding: 30px 50px;
+    overflow-y: auto;
     overflow-x: hidden;
     box-shadow: none;
   }
@@ -157,6 +160,12 @@ body::before {
     height: auto;
     max-width: 600px;
     margin: 0 auto;
+  }
+
+  .slider a:last-of-type,
+  .slider div:last-of-type {
+    margin-right: 0;
+    margin-bottom: 20px;
   }
 
   .slider a img,
@@ -185,6 +194,7 @@ body::before {
   }
 
   .slider {
+    height: calc(100vh - 80px);
     padding: 20px;
     gap: 20px;
   }
