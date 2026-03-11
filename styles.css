@@ -152,7 +152,7 @@ body::before {
     display: block;
     width: auto;
     height: 50px;
-    margin-right: 20px;
+    margin-right: 10px;
   }
 
   .menu a {
@@ -212,11 +212,12 @@ body::before {
 
   .menu a {
     font-size: 15px !important;
-    margin-right: 10px;
+    margin-right: 0;
   }
 
   .tablet-movil {
     margin: 0;
+    height: 30px;
   }
 
   .slider {
