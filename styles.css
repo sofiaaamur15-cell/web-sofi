@@ -35,6 +35,11 @@ body::before { /* fondo */
   -o-background-size: cover;
 }
 
+/* Fondo específico para la página about */
+body.fondo-about::before {
+  background-image: url("img/Contact.webp");
+}
+
 .menu {
   position: relative;
   height: 100vh;
@@ -46,14 +51,16 @@ body::before { /* fondo */
   box-shadow: 2px 0 30px rgba(0, 0, 0, 0.2);
 }
 
-.ordenador { /* Logo */
+/* Logo */
+.ordenador {
   display: block;
   width: 150px;
   height: auto;
   margin: 30px 0;
 }
 
-.tablet-movil {/* Logo */
+/* Logo */
+.tablet-movil {
   display: none;
 }
 
@@ -67,7 +74,7 @@ body::before { /* fondo */
   font-size: 20px;
   color: black;
   text-decoration: none;
-  font-family: "Helvetica", sans-serif;
+  font-family: Helvetica, sans-serif;
   display: block;
   margin: 10px 20px;
 }
@@ -123,7 +130,8 @@ body::before { /* fondo */
   justify-content: center;
 }
 
-.card-about { /* Tarjeta de texto única del about */
+ /* Tarjeta de texto única del about */
+.card-about {
   width: auto;
   height: 80vh;
   min-height: fit-content;
@@ -137,11 +145,25 @@ body::before { /* fondo */
   justify-content: center;
 }
 
+/*.text-contact{
+  position: fixed;
+  top: 44%;
+  left: 65%;
+  transform: translate(-50%, -50%);
+  font-size: 2.5vw;
+}
+
+.text-contact a{
+  display: block;
+  color: black;
+  text-decoration: none;
+  font-family: Helvetica, sans-serif;
+}*/
+
 /* Tablet y móvil */
 @media (max-width: 768px) {
   body {
     flex-direction: column;
-    /* overflow-y: auto; */
   }
 
   .menu {
@@ -158,11 +180,13 @@ body::before { /* fondo */
     z-index: 10;
   }
 
-  .ordenador { /* Logo */
+  /* Logo */
+  .ordenador {
     display: none;
   }
 
-  .tablet-movil { /* Logo */
+  /* Logo */
+  .tablet-movil {
     display: block;
     width: auto;
     height: 50px;
@@ -217,7 +241,8 @@ body::before { /* fondo */
     padding: 15px;
   }
 
-  .card-about { /* Tarjeta de texto única del about */
+  /* Tarjeta de texto única del about */
+  .card-about {
     margin: 90px 50px;
     padding: 0 30px;
   }
@@ -234,7 +259,8 @@ body::before { /* fondo */
     margin-right: 0;
   }
 
-  .tablet-movil { /* Logo */
+  /* Logo */
+  .tablet-movil {
     margin: 0;
     height: 30px;
   }
@@ -248,7 +274,8 @@ body::before { /* fondo */
     padding: 10px;
   }
 
-  .card-about { /* Tarjeta de texto única del about */
+  /* Tarjeta de texto única del about */
+  .card-about {
     margin: 80px 20px;
     padding: 0 30px;
   }
