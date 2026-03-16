@@ -11,7 +11,7 @@ body {
   display: flex;
 }
 
-body::before {
+body::before { /* fondo */
   content: "";
   position: fixed;
   top: 0;
@@ -46,14 +46,14 @@ body::before {
   box-shadow: 2px 0 30px rgba(0, 0, 0, 0.2);
 }
 
-.ordenador {
+.ordenador { /* Logo */
   display: block;
   width: 150px;
   height: auto;
   margin: 30px 0;
 }
 
-.tablet-movil {
+.tablet-movil {/* Logo */
   display: none;
 }
 
@@ -123,6 +123,20 @@ body::before {
   justify-content: center;
 }
 
+.card-about { /* Tarjeta de texto única del about */
+  width: auto;
+  height: 80vh;
+  min-height: fit-content;
+  margin-top: 10vh;
+  margin-right: 20px;
+  padding: 0 30px;
+  font-family: Helvetica, sans-serif;
+  background-color: rgba(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 /* Tablet y móvil */
 @media (max-width: 768px) {
   body {
@@ -144,11 +158,11 @@ body::before {
     z-index: 10;
   }
 
-  .ordenador {
+  .ordenador { /* Logo */
     display: none;
   }
 
-  .tablet-movil {
+  .tablet-movil { /* Logo */
     display: block;
     width: auto;
     height: 50px;
@@ -167,7 +181,7 @@ body::before {
 
   .slider {
     flex-direction: column;
-    height: calc(100vh - 90px);/* -alturamenu y altura padding */
+    height: calc(100vh - 90px);/* -altura menu y altura padding */
     gap: 30px;
     margin-top: 60px;
     padding: 30px 50px;
@@ -202,6 +216,11 @@ body::before {
     min-height: 400px;
     padding: 15px;
   }
+
+  .card-about { /* Tarjeta de texto única del about */
+    margin: 90px 50px;
+    padding: 0 30px;
+  }
 }
 
 /* Móvil pequeño */
@@ -215,7 +234,7 @@ body::before {
     margin-right: 0;
   }
 
-  .tablet-movil {
+  .tablet-movil { /* Logo */
     margin: 0;
     height: 30px;
   }
@@ -227,5 +246,10 @@ body::before {
   }
   .slider .card {
     padding: 10px;
+  }
+
+  .card-about { /* Tarjeta de texto única del about */
+    margin: 80px 20px;
+    padding: 0 30px;
   }
 }
