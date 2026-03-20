@@ -157,8 +157,8 @@ body.fondo-about::before {
 .text-contact a{
   display: block;
   background-color: black;
-  width: 300px;
-  height: 35px;
+  width: 240px;
+  height: 25px;
   opacity: 0.5;
 }
 
@@ -250,7 +250,7 @@ body.fondo-about::before {
   }
 
   .text-contact{
-    left: 68%;
+    left: calc( 78%  - 10% );
   }
 
   .text-contact a{
@@ -263,7 +263,7 @@ body.fondo-about::before {
 @media (max-width: 480px) {
   /* Fondo específico para la página about en movil*/
   body.fondo-about::before {
-    background-image: url("img/Contact.webp");
+    background-image: url("img/CONTACTMOVIL-12.webp");
   }
 
   .menu {
@@ -294,5 +294,9 @@ body.fondo-about::before {
   .card-about {
     margin: 80px 20px;
     padding: 0 30px;
+  }
+
+  .text-contact{
+    left: 50%;
   }
 }
