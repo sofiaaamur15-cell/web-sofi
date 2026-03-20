@@ -26,6 +26,8 @@ body::before { /* fondo */
 
   background-attachment: fixed;
 
+  transform: ;
+
   opacity: 0.6;
 
   z-index: -1;
@@ -37,7 +39,7 @@ body::before { /* fondo */
 
 /* Fondo específico para la página about */
 body.fondo-about::before {
-  background-image: url("img/Contact.webp");
+  background-image: url("img/Contact2-10.webp");
 }
 
 .menu {
@@ -145,20 +147,20 @@ body.fondo-about::before {
   justify-content: center;
 }
 
-/*.text-contact{
+.text-contact{
   position: fixed;
-  top: 44%;
-  left: 65%;
+  top: 48%;
+  left: 62%;
   transform: translate(-50%, -50%);
-  font-size: 2.5vw;
 }
 
 .text-contact a{
   display: block;
-  color: black;
-  text-decoration: none;
-  font-family: Helvetica, sans-serif;
-}*/
+  background-color: black;
+  width: 300px;
+  height: 35px;
+  opacity: 0.5;
+}
 
 /* Tablet y móvil */
 @media (max-width: 768px) {
@@ -246,10 +248,24 @@ body.fondo-about::before {
     margin: 90px 50px;
     padding: 0 30px;
   }
+
+  .text-contact{
+    left: 68%;
+  }
+
+  .text-contact a{
+    width: 180px;
+    height: 21px;
+  }
 }
 
 /* Móvil pequeño */
 @media (max-width: 480px) {
+  /* Fondo específico para la página about en movil*/
+  body.fondo-about::before {
+    background-image: url("img/Contact.webp");
+  }
+
   .menu {
     padding: 0 20px;
   }
