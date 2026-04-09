@@ -106,8 +106,7 @@ body.fondo-about::before {
   box-shadow: 2px 0 30px rgba(0, 0, 0, 0.6);
 }
 
-.slider a:last-of-type,
-.slider div:last-of-type {
+.slider > :last-child {
   margin-right: 20px;
 }
 
@@ -220,8 +219,7 @@ body.fondo-about::before {
     margin: 0 auto;
   }
 
-  .slider a:last-of-type,
-  .slider div:last-of-type {
+  .slider > :last-child {
     margin-right: 0;
     margin-bottom: 20px;
   }
