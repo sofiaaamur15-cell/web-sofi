@@ -221,7 +221,7 @@ body.fondo-about::before {
   }
 
   .slider > :last-child {
-    margin-right: 0;
+    margin-right: auto;
     margin-bottom: 20px;
   }
 
@@ -234,6 +234,7 @@ body.fondo-about::before {
 
   .slider .card {
     width: auto;
+    max-width: 570px;
     min-height: 400px;
     padding: 15px;
   }
