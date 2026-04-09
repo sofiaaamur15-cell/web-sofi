@@ -161,6 +161,7 @@ body.fondo-about::before {
 @media (max-width: 768px) {
   body {
     flex-direction: column;
+    min-height: 100dvh;
   }
 
   .menu {
@@ -221,7 +222,7 @@ body.fondo-about::before {
 
   .slider > :last-child {
     margin-right: 0;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
 
   .slider a img,
