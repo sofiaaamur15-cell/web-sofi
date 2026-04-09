@@ -37,7 +37,7 @@ body::before { /* fondo */
 
 /* Fondo específico para la página about */
 body.fondo-about::before {
-  background-image: url("img/Contact2-10.webp");
+  background-image: url("img/ContactoSI.webp");
 }
 
 .menu {
@@ -258,7 +258,7 @@ body.fondo-about::before {
 @media (max-width: 480px) {
   /* Fondo específico para la página about en movil*/
   body.fondo-about::before {
-    background-image: url("img/CONTACTMOVIL-12.webp");
+    background-image: url("img/ContactoSI.movil.webp");
   }
 
   .menu {
